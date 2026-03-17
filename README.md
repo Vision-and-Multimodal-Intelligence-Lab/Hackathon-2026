@@ -1,4 +1,4 @@
-# Hackathon 2026 Poster Generation Reference (Python + OpenRouter)
+# Hackathon 2026 Poster Generation Reference
 
 This repository is a reference implementation for a **Hackathon 2026 poster generation project**.
 
