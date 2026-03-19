@@ -93,6 +93,16 @@ INPUT_TEXT = "Create a CS seminar poster in this style..."
 INPUT_IMAGES = ["resource/flyer.jpeg", "resource/speaker image.jpg"]
 ```
 
+## Check remaining credit for a specific API key 
+
+To check the remaining credit for a specific key, you can call the key information endpoint and read the `limit_remaining` field from the returned JSON. Replace `YOUR_API_KEY` in the following command with the API key you have. 
+
+Example:
+
+```bash
+curl https://openrouter.ai/api/v1/auth/key -H "Authorization: Bearer YOUR_API_KEY" | python3 -c "import sys, json; print(json.load(sys.stdin)['data']['limit_remaining'])"
+```
+
 ## Notes
 
 - This repo is meant as **reference code** for hackathon development, not a production-ready framework.
